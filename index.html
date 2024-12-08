@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_c1699786f98802fb9c78cf1a2c0468af {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_c1699786f98802fb9c78cf1a2c0468af" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_c1699786f98802fb9c78cf1a2c0468af = L.map(
+                "map_c1699786f98802fb9c78cf1a2c0468af",
+                {
+                    center: [55.753544, 37.621202],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ae183fbd8f77bbbff484d56777f7e301 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_ae183fbd8f77bbbff484d56777f7e301.addTo(map_c1699786f98802fb9c78cf1a2c0468af);
+        
+    
+            var marker_45f1750152ef59725f39ffacaf2f8937 = L.marker(
+                [55.753544, 37.621202],
+                {}
+            ).addTo(map_c1699786f98802fb9c78cf1a2c0468af);
+        
+    
+            var icon_284d460fa23ba5aa13f51b2f9b051a04 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_45f1750152ef59725f39ffacaf2f8937.setIcon(icon_284d460fa23ba5aa13f51b2f9b051a04);
+        
+    
+        var popup_aa1943857c4b8849048389cb70fce377 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_425e8e0348c46f1818d3e18d2f7ebba3 = $(`<div id="html_425e8e0348c46f1818d3e18d2f7ebba3" style="width: 100.0%; height: 100.0%;">Да да, вы тут))</div>`)[0];
+                popup_aa1943857c4b8849048389cb70fce377.setContent(html_425e8e0348c46f1818d3e18d2f7ebba3);
+            
+        
+
+        marker_45f1750152ef59725f39ffacaf2f8937.bindPopup(popup_aa1943857c4b8849048389cb70fce377)
+        ;
+
+        
+    
+    
+            marker_45f1750152ef59725f39ffacaf2f8937.bindTooltip(
+                `<div>
+                     Вы тут)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_985a08d9f7e5813a612e5564e654bda3 = L.marker(
+                [55.754660757023636, 37.621529],
+                {}
+            ).addTo(map_c1699786f98802fb9c78cf1a2c0468af);
+        
+    
+            var icon_6ac29f2d31cbc7699a491a902ab15185 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_985a08d9f7e5813a612e5564e654bda3.setIcon(icon_6ac29f2d31cbc7699a491a902ab15185);
+        
+    
+        var popup_903bffe12a01a791e33a1b2a4ca7c7d4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1320d8da3823c71bb8a1c919090821e3 = $(`<div id="html_1320d8da3823c71bb8a1c919090821e3" style="width: 100.0%; height: 100.0%;">По прямой 0.12602057964603866км</div>`)[0];
+                popup_903bffe12a01a791e33a1b2a4ca7c7d4.setContent(html_1320d8da3823c71bb8a1c919090821e3);
+            
+        
+
+        marker_985a08d9f7e5813a612e5564e654bda3.bindPopup(popup_903bffe12a01a791e33a1b2a4ca7c7d4)
+        ;
+
+        
+    
+    
+            marker_985a08d9f7e5813a612e5564e654bda3.bindTooltip(
+                `<div>
+                     Bosco Cafe
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_2a5d0e4e6bd4ce7f613fdf6f56021ca3 = L.marker(
+                [55.754660757023636, 37.621529],
+                {}
+            ).addTo(map_c1699786f98802fb9c78cf1a2c0468af);
+        
+    
+            var icon_fb929724f440229a7a588470862240a2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2a5d0e4e6bd4ce7f613fdf6f56021ca3.setIcon(icon_fb929724f440229a7a588470862240a2);
+        
+    
+        var popup_c78e271a0275432c26b2ec24408df61f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d10ee49f1655c6e49e31d246fc340701 = $(`<div id="html_d10ee49f1655c6e49e31d246fc340701" style="width: 100.0%; height: 100.0%;">По прямой 0.12602057964603866км</div>`)[0];
+                popup_c78e271a0275432c26b2ec24408df61f.setContent(html_d10ee49f1655c6e49e31d246fc340701);
+            
+        
+
+        marker_2a5d0e4e6bd4ce7f613fdf6f56021ca3.bindPopup(popup_c78e271a0275432c26b2ec24408df61f)
+        ;
+
+        
+    
+    
+            marker_2a5d0e4e6bd4ce7f613fdf6f56021ca3.bindTooltip(
+                `<div>
+                     КОФЕМАНИЯ
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_e8053b2a72b469e14a731e8f5b4a8322 = L.marker(
+                [55.75321475660388, 37.626224999999984],
+                {}
+            ).addTo(map_c1699786f98802fb9c78cf1a2c0468af);
+        
+    
+            var icon_ee6c2f75b2fb15e57e45a2c239f299aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e8053b2a72b469e14a731e8f5b4a8322.setIcon(icon_ee6c2f75b2fb15e57e45a2c239f299aa);
+        
+    
+        var popup_2737c92e487e0c59f3a933b75678d6e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2bd72d84d423f79765e3ed0a6b2a5a5f = $(`<div id="html_2bd72d84d423f79765e3ed0a6b2a5a5f" style="width: 100.0%; height: 100.0%;">По прямой 0.3175148094061556км</div>`)[0];
+                popup_2737c92e487e0c59f3a933b75678d6e3.setContent(html_2bd72d84d423f79765e3ed0a6b2a5a5f);
+            
+        
+
+        marker_e8053b2a72b469e14a731e8f5b4a8322.bindPopup(popup_2737c92e487e0c59f3a933b75678d6e3)
+        ;
+
+        
+    
+    
+            marker_e8053b2a72b469e14a731e8f5b4a8322.bindTooltip(
+                `<div>
+                     Кофейня Просвет
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_82fcdc2d7f7d5e0ef960646e0c797265 = L.marker(
+                [55.75706419199997, 37.621987746],
+                {}
+            ).addTo(map_c1699786f98802fb9c78cf1a2c0468af);
+        
+    
+            var icon_0336795cac741db06f6d97ffd0387e00 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_82fcdc2d7f7d5e0ef960646e0c797265.setIcon(icon_0336795cac741db06f6d97ffd0387e00);
+        
+    
+        var popup_596ab2ef9c78fc39255110041de15b01 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_417a97663d7e99a00dc41105e54d5517 = $(`<div id="html_417a97663d7e99a00dc41105e54d5517" style="width: 100.0%; height: 100.0%;">По прямой 0.39502170500579503км</div>`)[0];
+                popup_596ab2ef9c78fc39255110041de15b01.setContent(html_417a97663d7e99a00dc41105e54d5517);
+            
+        
+
+        marker_82fcdc2d7f7d5e0ef960646e0c797265.bindPopup(popup_596ab2ef9c78fc39255110041de15b01)
+        ;
+
+        
+    
+    
+            marker_82fcdc2d7f7d5e0ef960646e0c797265.bindTooltip(
+                `<div>
+                     Кофе Хауз
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_b04be5395ee3dc120b709de4b8f31593 = L.marker(
+                [55.75579132932476, 37.614625717781195],
+                {}
+            ).addTo(map_c1699786f98802fb9c78cf1a2c0468af);
+        
+    
+            var icon_db41f78b8d78e5fc129630da96be822e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b04be5395ee3dc120b709de4b8f31593.setIcon(icon_db41f78b8d78e5fc129630da96be822e);
+        
+    
+        var popup_005b9958b1a5ed6c991d13a994e97c81 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a03069d45d542309a241f0426ff88fe2 = $(`<div id="html_a03069d45d542309a241f0426ff88fe2" style="width: 100.0%; height: 100.0%;">По прямой 0.4828030981948036км</div>`)[0];
+                popup_005b9958b1a5ed6c991d13a994e97c81.setContent(html_a03069d45d542309a241f0426ff88fe2);
+            
+        
+
+        marker_b04be5395ee3dc120b709de4b8f31593.bindPopup(popup_005b9958b1a5ed6c991d13a994e97c81)
+        ;
+
+        
+    
+    
+            marker_b04be5395ee3dc120b709de4b8f31593.bindTooltip(
+                `<div>
+                     Кофе Хауз
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>
