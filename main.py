@@ -32,12 +32,18 @@ def read_json(path):
 def get_coffee(coffee_shops, coords):
     struct = list()
     for shop in coffee_shops:
-        dist = distance.distance(coords, [shop["Latitude_WGS84"], shop["Longitude_WGS84"]]).km
-        struct.append({"distance": dist,
-                       "latitude": shop["Latitude_WGS84"],
-                       "longitude": shop["Longitude_WGS84"],
-                       "name": shop["Name"]
-                       })
+        dist = distance.distance(
+            coords,
+            [shop["Latitude_WGS84"], shop["Longitude_WGS84"]]
+        ).km
+        struct.append(
+            {
+                "distance": dist,
+                "latitude": shop["Latitude_WGS84"],
+                "longitude": shop["Longitude_WGS84"],
+                "name": shop["Name"]
+            }
+        )
 
     return struct
 
@@ -58,7 +64,7 @@ def create_map(map, coords, coffee_shops):
         folium.Marker(
             location=[shop["latitude"], shop["longitude"]],
             tooltip=shop["name"],
-            popup=f"По прямой {shop["distance"]}км",
+            popup=f"По прямой {shop['distance']}км",
             icon=folium.Icon(color="blue"),
         ).add_to(map)
 
